@@ -22,5 +22,5 @@ BW=im2bw(gsobel,level);
 L=bwlabel(BW);
 stats=regionprops(L,'Area');
 allArea=[stats.Area];
-idx=find([stats.Area]>30);
+idx=find([stats.Area]>100);
 BW2=ismember(L,idx);
